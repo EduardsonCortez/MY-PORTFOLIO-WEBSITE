@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eduardson Cortez | IT & Cybersecurity Portfolio</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -42,6 +43,7 @@
     .project {
       border-left: 5px solid #0f3d2e;
       padding-left: 15px;
+      margin-bottom: 25px;
     }
 
     .project img {
@@ -52,7 +54,6 @@
       margin: 15px 0;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
-
 
     footer {
       text-align: center;
@@ -66,20 +67,19 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header>
-    <img src="profile_picture.png" alt="Eduardson Cortez" style="
-       width:150px;
-       height:150px;
-       border-radius:50%;
-       object-fit:cover;
-       border:4px solid white;
-       margin-bottom:15px;
-     ">
+    <img src="image/profile_picture.png" alt="Eduardson Cortez"
+      style="width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid white;margin-bottom:15px;">
 
     <h1>Eduardson Cortez</h1>
     <p>BS Information Systems – Cybersecurity Specialization</p>
@@ -87,15 +87,19 @@
   </header>
 
   <section>
+
+    <!-- ABOUT -->
     <div class="card">
       <h2>👋 About Me</h2>
       <p>
-        I am an Information Systems student specializing in Cybersecurity with hands-on experience in technical support,
-        system troubleshooting, and basic web development. I am eager to learn, highly motivated, and passionate about
-        building practical IT and security skills through real-world experience.
+        I am an Information Systems student specializing in Cybersecurity with hands-on experience
+        in technical support, system troubleshooting, and basic web development. I am eager to learn,
+        highly motivated, and passionate about building practical IT and security skills through
+        real-world experience.
       </p>
     </div>
 
+    <!-- SKILLS -->
     <div class="card">
       <h2>🛠 Skills</h2>
       <ul>
@@ -109,16 +113,18 @@
       </ul>
     </div>
 
+    <!-- PROJECTS -->
     <div class="card">
       <h2>📂 Projects</h2>
 
+      <!-- PROJECT 1 -->
       <div class="project">
         <h3>🏛️ UP College of Medicine – Henry Sy Sr. Hall Information System</h3>
 
-        <!-- PROJECT IMAGE -->
         <a href="https://website-upcm.github.io/HSSH-MSB/" target="_blank">
-          <img src="upcm-project.png" alt="UP College of Medicine Project Screenshot">
+          <img src="image/upcm-project.png" alt="UP College of Medicine Project Screenshot">
         </a>
+
         <p>
           A comprehensive informational and reservation support website developed for
           <strong>UP College of Medicine – Henry Sy Sr. Hall</strong>. The system centralizes
@@ -144,25 +150,76 @@
           responsiveness, animations, and interactive components based on administrative
           requirements of the UP College of Medicine.
         </p>
-        <a href="https://website-upcm.github.io/HSSH-MSB/" target="_blank">Live Demo:
-          https://website-upcm.github.io/HSSH-MSB/</a>
+
+        <p>
+          <a href="https://website-upcm.github.io/HSSH-MSB/" target="_blank">
+            🔗 Live Demo
+          </a>
+        </p>
       </div>
 
+      <!-- PROJECT 2 -->
+      <div class="project">
+        <h3>
+          🔐 Data Privacy Compliance Management System
+          <span style="font-size:14px;color:#777;">(Capstone Project)</span>
+        </h3>
 
+        <img src="image/dp-dashboard.png" alt="Data Privacy System Dashboard">
 
-      <div class="card">
-        <h2>🎓 Education & Training</h2>
-        <p><strong>BS Information Systems – Cybersecurity</strong><br>GK College</p>
-        <p><strong>TESDA – Computer Systems Servicing NC II</strong></p>
-        <p><strong>ITIL® 4 Foundation</strong></p>
+        <p>
+          A web-based <strong>Data Privacy Compliance Management System</strong> developed as a
+          <strong>Capstone Project</strong> for Small and Medium Enterprises (SMEs). The system
+          assists Data Protection Officers (DPOs) in monitoring data privacy compliance through
+          consent management, breach incident logging, and compliance reporting.
+        </p>
+
+        <p><strong>Core Features:</strong></p>
+        <ul>
+          <li>Secure login and role-based access (DPO)</li>
+          <li>Consent Records Management (Add, Edit, Delete)</li>
+          <li>Data Breach Incident Logging with severity levels</li>
+          <li>Compliance Reports summary</li>
+          <li>Printable / downloadable compliance reports</li>
+          <li>Centralized dashboard for privacy monitoring</li>
+        </ul>
+
+        <p><strong>Technologies Used:</strong></p>
+        <ul>
+          <li>Python (Flask)</li>
+          <li>HTML, CSS</li>
+          <li>SQLite (Local Database)</li>
+        </ul>
+
+        <p>
+          <strong>My Role:</strong> Designed and developed the entire system including backend logic,
+          frontend pages, authentication, data handling, and compliance reporting. The project applies
+          data privacy principles and cybersecurity awareness in real-world business scenarios.
+        </p>
       </div>
+    </div>
 
-      <div class="card">
-        <h2>📞 Contact</h2>
-        <p>Email: eduardscortez05@gmail.com</p>
-        <p>Location: Philippines</p>
-        <p>GitHub: <a href="https://github.com/eduardsoncortez" target="_blank">github.com/eduardsoncortez</a></p>
-      </div>
+    <!-- EDUCATION -->
+    <div class="card">
+      <h2>🎓 Education & Training</h2>
+      <p><strong>BS Information Systems – Cybersecurity</strong><br>GK College</p>
+      <p><strong>TESDA – Computer Systems Servicing NC II</strong></p>
+      <p><strong>ITIL® 4 Foundation</strong></p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card">
+      <h2>📞 Contact</h2>
+      <p>Email: eduardscortez05@gmail.com</p>
+      <p>Location: Philippines</p>
+      <p>
+        GitHub:
+        <a href="https://github.com/eduardsoncortez" target="_blank">
+          github.com/eduardsoncortez
+        </a>
+      </p>
+    </div>
+
   </section>
 
   <footer>
